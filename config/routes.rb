@@ -1,5 +1,7 @@
 MyRails::Application.routes.draw do
-  get "welcome" => "welcome#index"
+  resources :people
+
+  root 'welcome#index'
   get "welcome/say_hello" => "welcome#say"
   get "welcome/bootstrap_hello" => "welcome#bootstrap"
   # The priority is based upon order of creation: first created -> highest priority.
