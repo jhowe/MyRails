@@ -1,9 +1,20 @@
 MyRails::Application.routes.draw do
+  resources :events
   resources :people
 
   root 'welcome#index'
+  # get "welcome" => "welcome#index"
   get "welcome/say_hello" => "welcome#say"
   get "welcome/bootstrap_hello" => "welcome#bootstrap"
+
+  # get "events" => "events#index"
+  # post "events" => "events#create"
+  # get "events/:id" => "events#show"
+  # put "events/:id" => "events#update"
+  # delete "events/:id" => "events#destroy"
+  # get "events/new" => "events#new"
+  # get "events/:id/edit" => "events#edit"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

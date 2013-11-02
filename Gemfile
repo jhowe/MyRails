@@ -44,3 +44,5 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem "haml", "~> 4.0.3"
+
+gem "kaminari"
